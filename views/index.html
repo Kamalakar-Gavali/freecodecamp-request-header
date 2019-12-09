@@ -1,0 +1,59 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Request Header Parser</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gaegu|Gloria+Hallelujah|Great+Vibes|Indie+Flower|Lato|Open+Sans|Oswald|Permanent+Marker">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+     API Project: Request Header Parser Microservice
+      </h1>
+    </header>
+
+    <main>
+    
+      
+      <p >Request Header Parser Microservice User Story: <br> 
+        1. I can get the IP address, preferred languages (from header Accept-Language) and system infos (from header User-Agent) for my device.<br><br>
+        <b>Example Usage:</b><br><a href="https://freecodecamp-request-header.glitch.me/api/whoami">https://freecodecamp-request-header.glitch.me/api/whoami</a> or click button bellow<br><br>
+        <b>Example Output:</b> <br>{<br>"ipaddress":"159.20.14.100",<br>"language":"en-US,en;q=0.5",<br> "software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"<br>}</p>
+      
+ 
+      <button> <a href="/api/whoami" type="button" id="submit">Get info</a></button>
+     
+      
+   
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a><br>
+      <a href="https://freecodecamp-request-header.glitch.me">Glitch working app</a>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+ 
+
+  </body>
+</html>
